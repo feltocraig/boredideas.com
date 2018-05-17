@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Meeting Up With Memories</title>
+	<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+	<style>
+		body {margin-top: 100px;}
+		p {font-family: 'EB Garamond', serif;font-size:16pt;}
+		.quote {font-style: italic;}
+		.content {width:600px; margin:0 auto;}
+		.on {display: inline;}
+		p.on {display: block;}
+		.off {display: none;}
+		a, a:visited {color: #333; text-decoration: none; cursor: pointer; border-bottom: 2px dotted #999; }
+		a.clicked {cursor: default; border-bottom: none;}
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('a[opens]').click(function() {
+			var openby = $(this).attr('opens');
+			$('[openby="' + openby +'"]').removeClass('off').addClass('on');
+			$(this).addClass('clicked');
+		});
+	});
+		
+	</script>
+</head>
+<body>
+<div class="content">
+	<p>What will it be like when I see you <a opens="1">again</a>?</p>
+	<p><span class="off" openby="1">It will probably be <a opens="2">unexpected</a>. </span><span class="off" openby="2">One of us will happen to be travelling to the other's <a opens="3">city</a><span class="off" openby="3"> and we both end up in the same neighborhood</span>. We'd lock <a opens="5">eyes</a><span class="off" openby="5"> and I would walk <a opens="6">over</a><span class="off" openby="6"> and say <a opens="7">hello</a></span></span>.</span></p>
+	<p class="quote"><span class="off" openby="7">"<a opens="8">Hey</a>.<span class="off" openby="8"> <a opens="9">How are you doing</a>?<span class="off" openby="9"> It's been a while... Where has life taken you?</span></span>"</span></p>
+	<p><span class="off" openby="8">I'd suggest that we sit down and catch-up. You look like you have <a opens="10">somewhere</a> to go<span class="off" openby="10">, but you say decide <a opens="11">stay</a></span>.</span></p>
+	<p class="quote"><span class="off" openby="11">"Do you ever think of the times we <a opens="12">shared</a>?<span class="off" openby="12"> When we use to be <a opens="13">together</a>?</span>"</span></p>
+	<p><span class="off" openby="13">We talk so <a opens="14">effortlessly</a><span class="off" openby="14">, I know we would,</span> even after years of not <a opens="15">communicating</a>.</span><span class="off" openby="15"> It seems like like we're just catching up from a long <a opens="16">vacation</a><span class="off" openby="16">, though we are no longer sitting next each other</span>. We might talk for 10 minutes or hours, either way I wouldn't want the conversation to <a opens="17">end</a>.</span><span class="off" openby="17"> Eventual you tell me you have somewhere you have to be. So we say our goodbye's and <a opens="18">part</a>.</span></p>
+	<p class="quote"><span class="off" openby="18">"It was great seeing <a opens="19">you</a>."</span></p>
+	<p><span class="off" openby="19">We knew each other's thoughts without having to speak <a opens="20">them</a>. </span><span class="off" openby="20">We lived like this for years without ever thinking it was something special. It's only now that after we met again and said our goodbye's that I realise just how special it <a opens="21">was</a><span class="off" openby="21">, and I begin to worry that I'll never have it <a opens="22">again</a></span>.</span></p>
+	<p><span class="off" openby="22">...and as I'm walking away I <a opens="23">wonder</a><span class="off" openby="23"> <i>if this is the last time I'll see you</i></span>.</span></p>
+</div>
+<!-- Page idea taken from http://greaterthanorequalto.net/ -->
+</body>
+</html>
