@@ -1,0 +1,88 @@
+body{
+	color: #555;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 16pt;
+}
+h1 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 50pt;
+	margin:0px;
+	text-align: center;
+}
+a, a:visited {
+	color: #111; 
+	text-decoration: none; 
+	cursor: pointer; 
+}
+a:hover {
+	border-bottom: 2px solid #111;
+}
+.content {
+	width:450px; 
+	margin:0 auto;
+}
+ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.nav {
+	font-weight: 700;
+	text-align: right;
+	border-top: 2px solid #333;
+}
+li {
+	display: inline;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.posts {
+	margin-top: 30px;
+}
+#textureAnimation {
+	background-image: url(blackn.jpg);
+	background-repeat: repeat;
+	-webkit-text-fill-color: transparent;
+	/* background-clip */
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	/* animation-name */
+	-webkit-animation-name: texture-animation;
+	-moz-animation-name: texture-animation;
+	-ms-animation-name: texture-animation;
+	-o-animation-name: texture-animation;
+	animation-name: texture-animation;
+	/* animation-duration */
+	-webkit-animation-duration: 30s;
+	-moz-animation-duration: 30s;
+	-ms-animation-duration: 30s;
+	-o-animation-duration: 30s;
+	animation-duration: 30s;
+	/* animation-iteration-count */
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	/* animation-timing-function */
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	-ms-animation-timing-function: linear;
+	-o-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+#textureAnimation.fallback {
+	margin: 11px;
+}
+
+@-webkit-keyframes texture-animation {
+  0% {
+    background-position: left bottom;
+  }
+  100% {
+    background-position: 1200px top;
+  }
+}
