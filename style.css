@@ -1,13 +1,13 @@
 body{
 	color: #555;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Lora', serif;
 	font-weight: 400;
 	font-size: 16pt;
 }
 h1 {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
-	font-size: 50pt;
+	font-size: 45pt;
 	margin:0px;
 	text-align: center;
 }
