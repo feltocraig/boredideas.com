@@ -41,6 +41,9 @@ li {
 .posts {
 	margin-top: 30px;
 }
+.post {
+	margin-bottom: 10px;
+}
 #textureAnimation {
 	background-image: url(blackn.jpg);
 	background-repeat: repeat;
